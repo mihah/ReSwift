@@ -1,5 +1,5 @@
 //
-//  TimeInterval.swift
+//  String.swift
 //  ReSwift
 //
 //  Created by Miha Herblan on 26/01/2017.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-extension TimeInterval {
-    
+
+extension String {
+
 }
