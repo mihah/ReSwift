@@ -10,5 +10,16 @@ import Foundation
 
 
 extension String {
+    var utf8Array: [UInt8] {
+        return Array(utf8)
+    }
+    
+    var base64:String?{
+        guard let data = self.data(using: String.Encoding.utf8) else {
+            return nil
+        }
+        return data.base64EncodedString()
+    }
 
+    
 }

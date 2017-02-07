@@ -9,5 +9,13 @@
 import Foundation
 
 extension TimeInterval {
-    
+    var minutesAndSeconds:String{
+        return minutesAndSeconds()
+    }
+    func minutesAndSeconds(separator:String = ":")->String{
+        let min = Int(self) >= 60 ? Int(self) / 60 : 0
+        let sec = Int(self) >= 60 ? Int(self) - min*60 : Int(self)
+        return "\(min)\(separator)\(sec)"
+    }
+
 }
